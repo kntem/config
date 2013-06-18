@@ -3,13 +3,22 @@ alias update_bash_aliases='sudo vim /private/etc/bash_aliases &&
                           cd ~/my_repos/mybash &&
                           git add bash_aliases &&
                           git commit &&
-                          git push &&
+                          git push origin master &&
                           cd - &&
                           refresh'
 
 alias echo_bash_aliases='less /private/etc/bash_aliases'
 
 alias update_bashrc='sudo vim /private/etc/bashrc && cp /private/etc/bashrc /Users/ntem/Dropbox/bash/mac/bashrc && source /etc/bashrc'
+
+alias update_bashrc='sudo vim /private/etc/bashrc &&
+                          cp /private/etc/bashrc /Users/ntem/my_repos/mybash/bashrc &&
+                          cd ~/my_repos/mybash &&
+                          git add bashrc &&
+                          git commit &&
+                          git push origin master &&
+                          cd - &&
+                          refresh'
 
 alias echo_bashrc='less /private/etc/bashrc'
 
