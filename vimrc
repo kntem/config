@@ -11,7 +11,6 @@ au BufWrite /private/tmp/crontab.* set nowritebackup
 " Don't write backup file if vim is being called by "chpass"
 au BufWrite /private/etc/pw.* set nowritebackup
 
-
 """"""""""""""""""""""""
 " Ntem's Configuration "
 """"""""""""""""""""""""
@@ -279,8 +278,11 @@ autocmd BufWritePre *.py :%s/\s\+$//e
 " nmap <D>b :VirtualEnvActivate invenio_next <CR> :let current_folder=expand('%:p:h') | invenio-make-install $(current_folder)
 
 " Command-T mapping
-
-nnoremap <silent> <D> :CommandT<CR>
+if has("gui_macvim")
+    macmenu &File.New\ Tab key=<nop>
+    map <D-p> :CommandT<CR>
+endif
+" nnoremap <silent> <Leader>p :CommandT<CR>
 
 " Parenthesis, brackets etc
 :inoremap ( ()<Esc>i
