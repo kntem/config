@@ -7,6 +7,8 @@ alias update_bash_aliases='sudo vim /private/etc/bash_aliases &&
                           cd - &&
                           refresh'
 
+alias install_bash_aliases='sudo cp /Users/ntem/my_repos/config/bash_aliases /private/etc/bash_aliases'
+
 alias echo_bash_aliases='less /private/etc/bash_aliases'
 
 alias update_bashrc='sudo vim /private/etc/bashrc &&
@@ -17,6 +19,8 @@ alias update_bashrc='sudo vim /private/etc/bashrc &&
                           git push origin master &&
                           cd - &&
                           refresh'
+
+alias install_bashrc='sudo cp /Users/ntem/my_repos/config/bashrc /private/etc/bashrc'
 
 alias echo_bashrc='less /private/etc/bashrc'
 
@@ -29,6 +33,8 @@ alias update_vimrc='sudo vim /usr/share/vim/vimrc &&
                     sudo git commit &&
                     sudo git push &&
                     cd -'
+
+alias install_vimrc='sudo cp /Users/ntem/my_repos/config/vimrc /usr/share/vim/vimrc'
 
 alias mvim="open -a MacVim.app"
 
