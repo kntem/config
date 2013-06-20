@@ -137,6 +137,8 @@ alias rebase-next='git rebase -i next'
 alias push='update_current_branch && echo "Updating kntem-public/"$CURRENT_BRANCH && git push kntem-public $CURRENT_BRANCH'
 alias br_recent='git for-each-ref --sort=-committerdate --count=10 --format="%(refname:short)" refs/heads/'
 
+alias git_log_last_week='git log --author=$USER --format="- %B" --since=-7days --reverse'
+
 ## Fun
 
 alias coffee_break='cat /dev/urandom | hexdump -C | grep --color=auto "ca fe"'
