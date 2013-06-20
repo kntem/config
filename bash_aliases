@@ -71,6 +71,7 @@ alias webdeposit='cd ~/src/invenio/modules/webdeposit/'
 ## Misc utils
 
 alias diskprogs='lsof | grep Volumes'
+alias calendar='paste <(cal "`date +%Y`")'
 
 ## Invenio logs
 
