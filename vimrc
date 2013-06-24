@@ -298,3 +298,5 @@ nmap <Leader>l :TagbarToggle<CR>
 autocmd FileType python map <buffer> <Leader>0 :call Flake8()<CR>
 highlight link PyFlakes SpellBad
 
+" Tags
+set tags=./tags;
