@@ -240,3 +240,17 @@ repeat ${1-1} cd ..
 git_lines_per_author() {
 git ls-files | xargs -n1 git blame | perl -n -e '/\s\((.*?)\s[0-9]{4}/ && print "$1\n"'     | sort -f | uniq -c | sort -r
 }
+
+
+function err_handle {
+status=$?
+echo status was $status
+
+if [[ $status -eq 127 ]]; then
+    lastcmd=$(history | tail -1 | sed 's/^ *[0-9]* * //')
+    cd $lastcmd
+fi
+}
+
+trap 'err_handle' ERR
+
