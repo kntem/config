@@ -1,9 +1,9 @@
 alias update_bash_aliases='sudo vim /private/etc/bash_aliases &&
                           cp /private/etc/bash_aliases /Users/ntem/my_repos/config/bash_aliases &&
                           cd ~/my_repos/config &&
-                          git add bash_aliases &&
-                          git commit &&
-                          git push origin master &&
+                          sudo git add bash_aliases &&
+                          sudo git commit &&
+                          sudo git push origin master &&
                           cd - &&
                           refresh'
 
@@ -14,9 +14,9 @@ alias echo_bash_aliases='less /private/etc/bash_aliases'
 alias update_bashrc='sudo vim /private/etc/bashrc &&
                           cp /private/etc/bashrc /Users/ntem/my_repos/config/bashrc &&
                           cd ~/my_repos/config &&
-                          git add bashrc &&
-                          git commit &&
-                          git push origin master &&
+                          sudo git add bashrc &&
+                          sudo git commit &&
+                          sudo git push origin master &&
                           cd - &&
                           refresh'
 
@@ -29,10 +29,11 @@ alias refresh='source /private/etc/bashrc'
 alias update_vimrc='sudo vim /usr/share/vim/vimrc &&
                     cd ~/my_repos/config &&
                     sudo cp /usr/share/vim/vimrc ~/my_repos/config/vimrc &&
-                    git add vimrc &&
+                    sudo git add vimrc &&
                     sudo git commit &&
-                    sudo git push &&
-                    cd -'
+                    sudo git push origin master &&
+                    cd - &&
+                    refresh'
 
 alias install_vimrc='sudo cp /Users/ntem/my_repos/config/vimrc /usr/share/vim/vimrc'
 
@@ -58,9 +59,6 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias cdenv='cd $CFG_INVENIO_PREFIX'
 alias go_back='cd -'
-
-alias lib='cd ./lib'
-alias etc='cd ./etc'
 
 alias invenio='cd ~/src/invenio/'
 alias bibfield='cd ~/src/invenio/modules/bibfield/'
