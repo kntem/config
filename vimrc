@@ -247,6 +247,7 @@ Bundle 'nvie/vim-flake8'
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
+Bundle "davidhalter/jedi-vim"
 
 augroup vimrc_autocmds
         autocmd!
@@ -300,3 +301,4 @@ highlight link PyFlakes SpellBad
 
 " Tags
 set tags=./tags;
+
