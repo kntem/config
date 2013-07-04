@@ -282,6 +282,9 @@ endfunction)
 nmap <Leader>m :call InvenioMakeInstall()<CR>
 " nmap <D>b :VirtualEnvActivate invenio_next <CR> :let current_folder=expand('%:p:h') | invenio-make-install $(current_folder)
 
+" Change the current directory when a file is opened
+set autochdir
+
 " Command-T mapping
 nnoremap <silent> <Leader>t :CommandT<CR>
 
