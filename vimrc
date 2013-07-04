@@ -276,6 +276,10 @@ inoremap <Nul> <C-x><C-o>
 autocmd BufWritePre *.py :%s/\s\+$//e
 
 " Map invenio make install script
+function! InvenioMakeInstall()
+    !invenio-make-install
+endfunction)
+nmap <Leader>m :call InvenioMakeInstall()<CR>
 " nmap <D>b :VirtualEnvActivate invenio_next <CR> :let current_folder=expand('%:p:h') | invenio-make-install $(current_folder)
 
 " Command-T mapping
