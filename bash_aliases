@@ -30,6 +30,7 @@ alias update_vimrc='sudo vim /usr/share/vim/vimrc &&
                     sudo git commit &&
                     cd - &&
                     refresh'
+alias echo_vimrc='less /usr/share/vim/vimrc'
 
 alias install_vimrc='sudo cp /Users/ntem/my_repos/config/vimrc /usr/share/vim/vimrc'
 
