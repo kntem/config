@@ -234,7 +234,8 @@ set nocompatible
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" Bundles
+
+" ================= Bundles ==================
 Bundle 'gmarik/vundle'
 "Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'tpope/vim-fugitive'
@@ -248,6 +249,7 @@ Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
 Bundle "davidhalter/jedi-vim"
+Bundle "tpope/vim-surround"
 
 augroup vimrc_autocmds
         autocmd!
@@ -308,4 +310,9 @@ highlight link PyFlakes SpellBad
 
 " Tags
 set tags=./tags;
+
+" Misc Mappings
+
+"map the 0 (zero) key to put you to the first character of a line, ignoring preceding whitespace)
+map 0 ^
 
