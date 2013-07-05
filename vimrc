@@ -250,6 +250,8 @@ Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
 Bundle "davidhalter/jedi-vim"
 Bundle "tpope/vim-surround"
+Bundle "vim-scripts/L9"
+Bundle "vim-scripts/FuzzyFinder"
 
 augroup vimrc_autocmds
         autocmd!
