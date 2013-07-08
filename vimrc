@@ -282,7 +282,7 @@ autocmd BufWritePre *.py :%s/\s\+$//e
 " Map invenio make install script
 function! InvenioMakeInstall()
     !invenio-make-install
-endfunction)
+endfunction
 nmap <Leader>m :call InvenioMakeInstall()<CR>
 " nmap <D>b :VirtualEnvActivate invenio_next <CR> :let current_folder=expand('%:p:h') | invenio-make-install $(current_folder)
 
@@ -317,4 +317,8 @@ set tags=./tags;
 
 "map the 0 (zero) key to put you to the first character of a line, ignoring preceding whitespace)
 map 0 ^
+
+"Fuzzy Finder mappings
+nnoremap <D-/> :FufFile <CR>
+nnoremap <D-.> :FufBufferTag <CR>
 
