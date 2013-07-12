@@ -281,14 +281,16 @@ autocmd BufWritePre *.py :%s/\s\+$//e
 
 " Map invenio make install script
 function! InvenioMakeInstall()
+    cd %:p:h
+    pwd
     !invenio-make-install
+    cd -
 endfunction
 nmap <Leader>m :call InvenioMakeInstall()<CR>
 " nmap <D>b :VirtualEnvActivate invenio_next <CR> :let current_folder=expand('%:p:h') | invenio-make-install $(current_folder)
 
 " Change the current directory when a file is opened
-set autochdir
-
+" set autochdir 
 " Command-T mapping
 nnoremap <silent> <Leader>t :CommandT<CR>
 
