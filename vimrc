@@ -252,6 +252,7 @@ Bundle "davidhalter/jedi-vim"
 Bundle "tpope/vim-surround"
 Bundle "vim-scripts/L9"
 Bundle "vim-scripts/FuzzyFinder"
+BUndle "andrewle/vim-autoclose"
 
 augroup vimrc_autocmds
         autocmd!
@@ -295,11 +296,11 @@ nmap <Leader>m :call InvenioMakeInstall()<CR>
 nnoremap <silent> <Leader>t :CommandT<CR>
 
 " Parenthesis, brackets etc
-:inoremap ( ()<Esc>i
-:inoremap [ []<Esc>i
-:inoremap { {}<Esc>i
-:inoremap " ""<Esc>i
-:inoremap ' ''<Esc>i
+" :inoremap ( ()<Esc>i
+" :inoremap [ []<Esc>i
+" :inoremap { {}<Esc>i
+" :inoremap " ""<Esc>i
+" :inoremap ' ''<Esc>i
 
 " Highlight end of line whitespace.
 highlight WhitespaceEOL ctermbg=red guibg=red
