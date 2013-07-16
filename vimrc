@@ -252,7 +252,7 @@ Bundle "davidhalter/jedi-vim"
 Bundle "tpope/vim-surround"
 Bundle "vim-scripts/L9"
 Bundle "vim-scripts/FuzzyFinder"
-BUndle "andrewle/vim-autoclose"
+Bundle "andrewle/vim-autoclose"
 
 augroup vimrc_autocmds
         autocmd!
