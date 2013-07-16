@@ -321,9 +321,10 @@ set tags=./tags;
 "map the 0 (zero) key to put you to the first character of a line, ignoring preceding whitespace)
 map 0 ^
 
-" Map Shift-Tab
+" Map tab and Shift-Tab
 " for command mode
 nmap <S-Tab> <<
+nmap <Tab> >>
 " for insert mode
 imap <S-Tab> <Esc><<i
 
