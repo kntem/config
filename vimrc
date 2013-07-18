@@ -291,7 +291,7 @@ nmap <Leader>m :call InvenioMakeInstall()<CR>
 " nmap <D>b :VirtualEnvActivate invenio_next <CR> :let current_folder=expand('%:p:h') | invenio-make-install $(current_folder)
 
 " Change the current directory when a file is opened
-" set autochdir 
+" set autochdir
 " Command-T mapping
 nnoremap <silent> <Leader>t :CommandT<CR>
 
@@ -312,6 +312,10 @@ nmap <Leader>l :TagbarToggle<CR>
 " Flake8 -
 autocmd FileType python map <buffer> <Leader>0 :call Flake8()<CR>
 highlight link PyFlakes SpellBad
+
+"Jedi
+let g:jedi#popup_select_first = 1
+
 
 " Tags
 set tags=./tags;
