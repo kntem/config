@@ -339,3 +339,4 @@ nnoremap <D-.> :FufBufferTag <CR>
 "Common mappings
 cnoreabbrev W w
 cnoreabbrev Q q
+cnoreabbrev Wa wq
