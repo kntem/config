@@ -336,3 +336,6 @@ imap <S-Tab> <Esc><<i
 nnoremap <D-/> :FufFile <CR>
 nnoremap <D-.> :FufBufferTag <CR>
 
+"Common mappings
+cnoreabbrev W w
+cnoreabbrev Q q
